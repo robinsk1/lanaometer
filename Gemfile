@@ -2,12 +2,14 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
-gem 'json'
+gem 'haml'
+gem 'haml-rails', :group => :development
+gem 'pg'
+gem 'simple_form'
+gem 'google_places_autocomplete'
+gem 'google_places'
+gem 'geokit'
+gem 'geokit-rails3'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,5 +31,16 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
+ gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :test do
+  # Pretty printed test output
+  gem 'rails3-generators'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'steak'
+  gem 'turn', '0.8.2', :require => false
+end
