@@ -1,4 +1,6 @@
 Lanadelrey::Application.routes.draw do
+  root :to => "site#welcome"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
