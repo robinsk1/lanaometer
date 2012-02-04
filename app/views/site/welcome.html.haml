@@ -1,2 +1,15 @@
-%h1 Site#welcome
-%p Find me in app/views/site/welcome.html.haml
+=@positweets
+%br
+=@negatweets
+%br
+=@neutweets
+%br
+=@pos
+%br
+=@neg
+
+%br
+-@results.each do |result|
+ =raw result['text']
+ %br
+ %br

@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/chrsgrrtt/contentapi-ruby.git
+  revision: fd874555bb21c62550cff5d5693900a7cc954a38
+  specs:
+    guardian-content (0.2.2)
+      httparty (>= 0.5.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -199,6 +206,7 @@ DEPENDENCIES
   geokit-rails3
   google_places
   google_places_autocomplete
+  guardian-content!
   haml
   haml-rails
   jquery-rails

@@ -10,6 +10,7 @@ gem 'google_places_autocomplete'
 gem 'google_places'
 gem 'geokit'
 gem 'geokit-rails3'
+gem 'guardian-content', :git => "https://github.com/chrsgrrtt/contentapi-ruby.git"
 
 # Gems used only for assets and not required
 # in production environments by default.
