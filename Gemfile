@@ -40,6 +40,7 @@ end
 
 group :development do
   gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'heroku'
 end
 
 group :test do
