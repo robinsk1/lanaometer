@@ -1,3 +1,12 @@
 // Place all the styles related to the site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tweet {font-family: LaneNarrowRegular; color: #000; font-weight: bolder;}
+.tweet-2 {font-family: VolkhovRegular; color: #000; font-size: 18pt;}
+.banner {height:120px; background-color:#000; font-family: VolkhowBoldItalic; color: #FFF; font-size: 68pt;}
+.positive {font-family: VolkhovRegular; color: green; font-size: 18pt;}
+.negative {font-family: VolkhovRegular; color: red; font-size: 18pt;}
+.neutral {font-family: VolkhovRegular; color: black; font-size: 18pt;}
+.result {font-family: VolkhovRegular; color: black; font-size: 26pt;}
+.row-spacer {height:20px;}

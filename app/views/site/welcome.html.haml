@@ -1,15 +1,36 @@
-=@positweets
-%br
-=@negatweets
-%br
-=@neutweets
-%br
-=@pos
-%br
-=@neg
+.row
+ .fourcol
+  .positive
+   =@positweets
+ .fourcol
+  .negative
+   =@negatweets
+ .fourcol.last
+  .neutral
+   =@neutweets
 
-%br
--@results.each do |result|
- =raw result['text']
- %br
- %br
+.row
+ .twelvecol.row-spacer.last
+
+
+.row
+ .twocol
+ .eightcol
+  .result
+   =@resolution
+ .twocol.last
+
+.row
+ .twelvecol.row-spacer.last
+
+.row
+ .threecol
+ .sixcol
+  -@results.each do |result|
+   .tweet-2
+    =raw result['text']
+    %br
+    %br
+ .threecol.last
+
+
