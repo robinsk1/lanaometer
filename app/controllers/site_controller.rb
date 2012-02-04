@@ -3,6 +3,7 @@ class SiteController < ApplicationController
 
  def welcome
   search_term = "lana del rey"
+  @articles = GuardianContent::Content.search(search_term)
   senti = Sentiment.new
   result = senti.get_tweet_hash( search_term, 100)
   negative = 0

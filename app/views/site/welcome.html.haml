@@ -37,4 +37,16 @@
     %br
  .threecol.last
 
+.row.row-spacer
+ .twelvecol.last
+
+.row
+ .twocol
+ .eightcol
+  -@articles.each do |article|
+   .tweet
+    %p.center
+     = link_to article.title, article.url
+ .twocol.last
+
 
