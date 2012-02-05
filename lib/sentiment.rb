@@ -21,34 +21,24 @@ require 'uri'
 # return:hash -- discovered tweets in a hash.
 #########################################################################
 def get_tweet_hash( search_term, max_results = 10)
-
   results_per_page = 100
   results_per_page = max_results if max_results < 100
-
   done = false
   page = 1
   num_results = 0
-
   output = []
-
   # Encode search term for URL
   search_term = URI.escape(search_term)
-
   while (not done)
-
     # Construct the search URL
     search_url = "http://search.twitter.com/search.json?q=#{search_term}&rpp=#{results_per_page}&page=#{page}"
-
     # prints out the url being used... useful for debugging.
     puts search_url
-
     # Request the tweets from twitter search. I got the url for this here: http://dev.twitter.com/pages/using_search
     resp = Net::HTTP.get_response(URI.parse(search_url))
-
     # Parse the data into from JSON into ruby hash.
     data = resp.body
     result = JSON.parse(data)
-
     # Raise exception if there is an error getting data from twitter
     if result.has_key? 'Error'
       raise "Error assessing tweet data"
@@ -69,9 +59,7 @@ def get_tweet_hash( search_term, max_results = 10)
         end
       end
     end
-
     page += 1
-
     if output.size >= max_results or result['results'].size == 0
       done = true
     end
@@ -79,14 +67,14 @@ def get_tweet_hash( search_term, max_results = 10)
   return output
 end
 
-
-#####################################################################
+####################################################################
 # load the specified sentiment file into a hash
 #
 # filename:string -- name of file to load
 # sentihash:hash -- hash to load data into
 # return:hash -- hash with data loaded
 #####################################################################
+
 def load_senti_file (filename)
   sentihash = {}
   # load the word file
@@ -98,7 +86,6 @@ def load_senti_file (filename)
     sentihash[text] = sentiscore.to_f
   end
   file.close
-
   return sentihash
 end
 
@@ -112,40 +99,28 @@ end
 # return: int -- 0 negative, 1 means neutral, and 2 means positive
 #####################################################################
 def analyze_sentiment ( text )
-
   # load the word file (words -> sentiment score)
   sentihash = load_senti_file ("#{Rails.root}/lib/sentiwords.txt")
-
   # load the symbol file (smiles and ascii symbols -> sentiment score)
   sentihash.merge!(load_senti_file ("#{Rails.root}/lib/sentislang.txt"))
-
   # tokenize the text
   tokens = text.split
-
   # Check the sentiment value of each token against the sentihash.
   # Since each word has a positive or negative numeric sentiment value
   # we can just sum the values of all the sentimental words. If it is
   # positive then we say the tweet is positive. If it is negative we
   # say the tweet is negative.
   sentiment_total = 0.0
-
   for token in tokens do
-
     sentiment_value = sentihash[token]
-
     if sentiment_value
-
       # for debugging purposes
       #puts "#{token} => #{sentiment_value}"
-
       sentiment_total += sentiment_value
-
     end
   end
-
   # threshold for classification
   threshold = 0.0
-
   # if less then the negative threshold classify negative
   if sentiment_total < (-1 * threshold)
     return 0
@@ -158,21 +133,16 @@ def analyze_sentiment ( text )
   end
 end
 
-
 def get_search_term_and_analyze
-
   # Get search term from user
   print "Enter search term: "
   search_term = gets.chomp
-
   # Get the hash from twitter using the specified search term
   puts "Accessing tweets using search term: #{search_term}..."
   result = get_tweet_hash( search_term, 100)
-
   negative = 0
   neutral = 0
   positive = 0
-
   for tweet in result do
     #  puts "From #{tweet['from_user']}: #{tweet['text']}"
     sentiment = analyze_sentiment( tweet['text'] )
@@ -188,13 +158,11 @@ def get_search_term_and_analyze
   puts "Negative tweets: #{negative}"
   puts "Neutral tweets: #{neutral}"
   puts "Positive tweets: #{positive}"
-
   if positive >= negative
     puts "Search term \"#{search_term}\" had a #{((100.0 * positive) / (positive+negative)).round(0)}\% positive sentiment."
   else
     puts "Search term \"#{search_term}\" had a #{((100.0 * negative) / (positive+negative)).round(0)}\% negative sentiment."
   end
-
 end
 
 #get_search_term_and_analyze
