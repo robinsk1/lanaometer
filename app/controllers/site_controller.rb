@@ -11,18 +11,21 @@ class SiteController < ApplicationController
     sentiment = senti.analyze_sentiment( tweet['text'] )
     if sentiment == 0
       negative += 1
+      tweet.merge! :score => "negative"
     elsif sentiment == 1
       neutral += 1
+      tweet.merge! :score => "neutral"
     elsif sentiment == 2
       positive += 1
+      tweet.merge! :score => "positive"
     end
   end
   @tweets =  "Number of tweets analyzed: #{@results.size}"
   @negatweets, @neutweets, @positweets =  "Negative tweets: #{negative}",  "Neutral tweets: #{neutral}", "Positive tweets: #{positive}"
   if positive >= negative
-    @resolution = "\"#{search_term}\" had a #{((100.0 * positive) / (positive+negative)).round(0)}\% positive sentiment."
+    @resolution = {:text => "#{((100.0 * positive) / (positive+negative)).round(0)}\% positive sentiment", :sentiment => :positive}
   else
-    @resolution = "\"#{search_term}\" had a #{((100.0 * negative) / (positive+negative)).round(0)}\% negative sentiment."
+    @resolution = {:text => "#{((100.0 * negative) / (positive+negative)).round(0)}\% negative sentiment", :sentiment => :positive}
   end
  end
 

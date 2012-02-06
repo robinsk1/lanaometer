@@ -31,7 +31,7 @@ def get_tweet_hash( search_term, max_results = 10)
   search_term = URI.escape(search_term)
   while (not done)
     # Construct the search URL
-    search_url = "http://search.twitter.com/search.json?q=#{search_term}&rpp=#{results_per_page}&page=#{page}"
+    search_url = "http://search.twitter.com/search.json?q=#{search_term}&rpp=#{results_per_page}&page=#{page}&lang=en"
     # prints out the url being used... useful for debugging.
     puts search_url
     # Request the tweets from twitter search. I got the url for this here: http://dev.twitter.com/pages/using_search
@@ -99,11 +99,8 @@ end
 # return: int -- 0 negative, 1 means neutral, and 2 means positive
 #####################################################################
 def analyze_sentiment ( text )
-  # load the word file (words -> sentiment score)
   sentihash = load_senti_file ("#{Rails.root}/lib/sentiwords.txt")
-  # load the symbol file (smiles and ascii symbols -> sentiment score)
   sentihash.merge!(load_senti_file ("#{Rails.root}/lib/sentislang.txt"))
-  # tokenize the text
   tokens = text.split
   # Check the sentiment value of each token against the sentihash.
   # Since each word has a positive or negative numeric sentiment value
@@ -115,7 +112,7 @@ def analyze_sentiment ( text )
     sentiment_value = sentihash[token]
     if sentiment_value
       # for debugging purposes
-      #puts "#{token} => #{sentiment_value}"
+      puts "#{token} => #{sentiment_value}"
       sentiment_total += sentiment_value
     end
   end

@@ -2,15 +2,22 @@
  .fourcol
   .positive
    %p.center
+    =image_tag("lana-happy.jpg")
+    %br
     =@positweets
  .fourcol
-  .negative
-   %p.center
-    =@negatweets
- .fourcol.last
   .neutral
    %p.center
+    =image_tag("lana-neutral.png")
+    %br
     =@neutweets
+
+ .fourcol.last
+  .negative
+   %p.center
+    =image_tag("lana-sad.jpg")
+    %br
+    =@negatweets
 
 .row.row-spacer
  .twelvecol.last
@@ -20,7 +27,7 @@
  .eightcol
   .result
    %p.center
-    =@resolution
+    -color_code_resolution(@resolution)
  .twocol.last
 
 .row.row-spacer
@@ -30,22 +37,19 @@
  .threecol
  .sixcol
   -@results.each do |result|
-   .tweet-2
-    =raw result['text']
-    %br
-    %br
+   -color_code(result)
+   %br
  .threecol.last
 
 .row.row-spacer
  .twelvecol.last
 
-.row
- .twocol
- .eightcol
-  -@articles.each do |article|
-   .tweet
-    %p.center
-     = link_to article.title, article.url
- .twocol.last
+-#.row
+-# .twocol
+-# .eightcol
+-#  -@articles.each do |article|
+-#   %p.center
+-#    =link_to article.title, article.url
+-# .twocol.last
 
 
