@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dc3bffe-7ab1-4d57-a61e-2a1594b8a37f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/site.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/site.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
     </list>
     <ignored path="lanadelrey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="site.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="14" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.9723757">
+            <state line="22" column="14" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="38" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+            <state line="18" column="19" selection-start="465" selection-end="465" vertical-scroll-proportion="0.38121548">
               <folding />
             </state>
           </provider>
@@ -147,9 +146,9 @@
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/helpers/site_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/site/welcome.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/site.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
       </list>
     </option>
   </component>
@@ -673,11 +672,6 @@
         <state line="3" column="3" selection-start="55" selection-end="551" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="16" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" />
@@ -714,7 +708,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.9723757">
+        <state line="22" column="14" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="19" selection-start="465" selection-end="465" vertical-scroll-proportion="0.38121548">
           <folding />
         </state>
       </provider>
