@@ -21,11 +21,11 @@ class SiteController < ApplicationController
     end
   end
   @tweets =  "Number of tweets analyzed: #{@results.size}"
-  @negatweets, @neutweets, @positweets =  "Negative tweets: #{negative}",  "Neutral tweets: #{neutral}", "Positive tweets: #{positive}"
+  @negatweets, @neutweets, @positweets =  "'sad face' tweets: #{negative}",  "neutral tweets: #{neutral}", "'happy face' tweets: #{positive}"
   if positive >= negative
-    @resolution = {:text => "#{((100.0 * positive) / (positive+negative)).round(0)}\% positive sentiment", :sentiment => :positive}
+    @resolution = {:text => "#{((100.0 * positive) / (positive+negative)).round(0)}\%", :sentiment => :positive}
   else
-    @resolution = {:text => "#{((100.0 * negative) / (positive+negative)).round(0)}\% negative sentiment", :sentiment => :positive}
+    @resolution = {:text => "#{((100.0 * negative) / (positive+negative)).round(0)}\%", :sentiment => :positive}
   end
  end
 

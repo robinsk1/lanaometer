@@ -2,6 +2,7 @@ module ApplicationHelper
 
   def google_analytics_js
     "<script type='text/javascript>
+
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-18685125-1']);
     _gaq.push(['_trackPageview']);
@@ -11,6 +12,7 @@ module ApplicationHelper
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+
     </script>"
   end
 
