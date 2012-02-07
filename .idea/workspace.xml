@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3dc3bffe-7ab1-4d57-a61e-2a1594b8a37f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/site_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/site_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/welcome.html.haml" afterPath="$PROJECT_DIR$/app/views/site/welcome.html.haml" />
     </list>
     <ignored path="lanadelrey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +50,7 @@
       <file leaf-file-name="site_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/site_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="40" selection-start="794" selection-end="794" vertical-scroll-proportion="0.42541435">
+            <state line="31" column="67" selection-start="844" selection-end="844" vertical-scroll-proportion="0.6022099">
               <folding />
             </state>
           </provider>
@@ -716,7 +715,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/site_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="40" selection-start="794" selection-end="794" vertical-scroll-proportion="0.42541435">
+        <state line="31" column="67" selection-start="844" selection-end="844" vertical-scroll-proportion="0.6022099">
           <folding />
         </state>
       </provider>
