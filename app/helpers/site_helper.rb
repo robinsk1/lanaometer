@@ -21,11 +21,11 @@ module SiteHelper
     case resolution[:sentiment]
       when :negative
         haml_tag(:div, :class => 'resolution red') do
-         haml_tag('p.center', "#{resolution[:text]} hate her")
+         haml_tag('p.center', "*#{resolution[:text]} hate her")
         end
       when :positive
         haml_tag(:div, :class => 'resolution green') do
-         haml_tag('p.center', "#{resolution[:text]} love her")
+         haml_tag('p.center', "*#{resolution[:text]} love her")
         end
     end
   end
