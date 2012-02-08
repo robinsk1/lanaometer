@@ -21,7 +21,7 @@ require 'uri'
 # return:hash -- discovered tweets in a hash.
 #########################################################################
 def get_tweet_hash( search_term, max_results = 10)
-  results_per_page = 100
+  results_per_page = 50
   results_per_page = max_results if max_results < 100
   done = false
   page = 1
