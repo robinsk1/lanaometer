@@ -20,7 +20,7 @@ require 'uri'
 # search_term:string -- term to search twitter for.
 # return:hash -- discovered tweets in a hash.
 #########################################################################
-def get_tweet_hash( search_term, max_results = 10)
+def get_tweet_hash( search_term, max_results = 100)
   results_per_page = 50
   results_per_page = max_results if max_results < 100
   done = false
@@ -136,7 +136,7 @@ def get_search_term_and_analyze
   search_term = gets.chomp
   # Get the hash from twitter using the specified search term
   puts "Accessing tweets using search term: #{search_term}..."
-  result = get_tweet_hash( search_term, 100)
+  result = get_tweet_hash( search_term, 50)
   negative = 0
   neutral = 0
   positive = 0
