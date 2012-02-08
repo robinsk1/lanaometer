@@ -5,7 +5,7 @@ class SiteController < ApplicationController
   search_term = "lana del rey"
   @articles = GuardianContent::Content.search(search_term)
   senti = Sentiment.new
-  @results = senti.get_tweet_hash( search_term, 100)
+  @results = senti.get_tweet_hash( search_term, 50)
   negative, neutral, positive = 0, 0, 0
   for tweet in @results do
     sentiment = senti.analyze_sentiment( tweet['text'] )
