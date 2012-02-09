@@ -33,7 +33,7 @@ def get_tweet_hash( search_term, max_results = 50)
     # Construct the search URL
     search_url = "http://search.twitter.com/search.json?q=#{search_term}&rpp=#{results_per_page}&page=#{page}&lang=en"
     # prints out the url being used... useful for debugging.
-    puts search_url
+    #puts search_url
     # Request the tweets from twitter search. I got the url for this here: http://dev.twitter.com/pages/using_search
     resp = Net::HTTP.get_response(URI.parse(search_url))
     # Parse the data into from JSON into ruby hash.
@@ -48,8 +48,8 @@ def get_tweet_hash( search_term, max_results = 50)
       # trims off any amount over the max_results
       if max_results < (output.size + result['results'].size)
         cutpoint = max_results - output.size
-        puts cutpoint
-        puts result['results'][0,cutpoint]
+        #puts cutpoint
+        #puts result['results'][0,cutpoint]
         for tweet in result['results'][0,cutpoint]
           output.push(tweet)
         end
@@ -112,7 +112,7 @@ def analyze_sentiment ( text )
     sentiment_value = sentihash[token]
     if sentiment_value
       # for debugging purposes
-      puts "#{token} => #{sentiment_value}"
+      #puts "#{token} => #{sentiment_value}"
       sentiment_total += sentiment_value
     end
   end
