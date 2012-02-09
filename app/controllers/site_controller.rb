@@ -21,7 +21,7 @@ class SiteController < ApplicationController
     end
   end
   @tweets =  "Number of tweets analyzed: #{@results.size}"
-  @negatweets, @neutweets, @positweets =  "'sad-lana' tweets: #{negative}",  "neutral tweets: #{neutral}", "'happy-lana' tweets: #{positive}"
+  @negatweets, @neutweets, @positweets =  "positive tweets: #{negative}",  "neutral tweets: #{neutral}", "negative tweets: #{positive}"
   if positive >= negative
     @verdict = "positive"
     @percentage = ((100.0 * negative) / (positive+negative)).round(0)
