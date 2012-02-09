@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3dc3bffe-7ab1-4d57-a61e-2a1594b8a37f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/welcome.html.haml" afterPath="$PROJECT_DIR$/app/views/site/welcome.html.haml" />
-    </list>
+    <list default="true" id="3dc3bffe-7ab1-4d57-a61e-2a1594b8a37f" name="Default" comment="" />
     <ignored path="lanadelrey.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
