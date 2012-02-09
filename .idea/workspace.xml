@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3dc3bffe-7ab1-4d57-a61e-2a1594b8a37f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/site.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/site.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/site_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/site_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/site.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/site.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/site_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/site_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/sentiment.rb" afterPath="$PROJECT_DIR$/lib/sentiment.rb" />
     </list>
     <ignored path="lanadelrey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +35,7 @@
       <file leaf-file-name="welcome.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/site/welcome.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="24" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+            <state line="41" column="21" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -45,16 +44,16 @@
       <file leaf-file-name="site_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/site_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="36" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+            <state line="12" column="35" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="site_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="50" selection-start="245" selection-end="245" vertical-scroll-proportion="0.16867469">
+            <state line="36" column="55" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +62,7 @@
       <file leaf-file-name="sentiment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/sentiment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="7" selection-start="4087" selection-end="4087" vertical-scroll-proportion="0.0">
+            <state line="26" column="32" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="site.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="43" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
+            <state line="13" column="113" selection-start="893" selection-end="893" vertical-scroll-proportion="0.31325302">
               <folding />
             </state>
           </provider>
@@ -145,14 +144,14 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/lib/sentiment.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/site.css.scss" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/site.js" />
         <option value="$PROJECT_DIR$/app/views/site/welcome.html.haml" />
-        <option value="$PROJECT_DIR$/app/helpers/site_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/sentiment.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/site_helper.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/site.css.scss" />
       </list>
     </option>
   </component>
@@ -619,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/sentiment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="7" selection-start="4087" selection-end="4087" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
@@ -647,27 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/site/welcome.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="24" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/site_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="24" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0">
@@ -677,7 +648,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="245" selection-end="245" vertical-scroll-proportion="0.16867469">
+        <state line="36" column="55" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/sentiment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="32" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/site/welcome.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="21" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/site_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/site.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="113" selection-start="893" selection-end="893" vertical-scroll-proportion="0.31325302">
           <folding />
         </state>
       </provider>
