@@ -20,6 +20,30 @@
   :javascript
    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
    if(!d.getElementById(id)){js=d.createElement(s);js.id=id; js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  :javascript
+    $(document).ready(function(){
+    var current = 0;
+    var verdict = "#{@verdict.to_s}";
+    var finish = #{@percentage};
+    var miliseconds = 1500;
+    var rate = 1;
+    var some_text
+
+    if (verdict == "positive") {
+       some_text = "positive tweets";
+    }
+    else if (verdict == "negative"){
+       some_text = "negative tweets";
+    }
+
+    var counter = setInterval(function(){
+         if(current >= finish) clearInterval(counter);
+         $('.percent').text(current + "% " + some_text);
+         current = parseInt(current) + parseInt(rate);
+    }, miliseconds / (finish / rate));
+    });
+
+
  %body
   .container
    .row
