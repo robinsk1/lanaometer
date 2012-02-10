@@ -5,7 +5,8 @@ class SiteController < ApplicationController
   search_term = "lana del rey"
   #@articles = GuardianContent::Content.search(search_term)
   senti = Sentiment.new
-  @results = senti.get_tweet_hash( search_term, 100)
+  req_tweet_number = 100
+  @results = senti.get_tweet_hash( search_term, req_tweet_number)
   negative, neutral, positive = 0, 0, 0
   for tweet in @results do
     sentiment = senti.analyze_sentiment( tweet['text'] )
@@ -20,8 +21,9 @@ class SiteController < ApplicationController
       tweet.merge! :score => "positive"
     end
   end
-  @tweets =  "Number of tweets analyzed: #{@results.size}"
-  @negatweets, @neutweets, @positweets =  "positive tweets: #{negative}",  "neutral tweets: #{neutral}", "negative tweets: #{positive}"
+
+  @negatweets, @neutweets, @positweets =  "negative tweets: #{negative}",  "neutral tweets: #{neutral}", "positive tweets: #{positive}"
+
   if positive >= negative
     @verdict = "positive"
     @percentage = ((100.0 * negative) / (positive+negative)).round(0)
@@ -31,6 +33,11 @@ class SiteController < ApplicationController
     @percentage = ((100.0 * positive) / (positive+negative)).round(0)
     @resolution = {:text => "#{@percentage}\%", :sentiment => :negative}
   end
+
+   @entity = Entity.find_by_name("LDR")
+
+   Entity.update_counters @entity.id , :impression_count => req_tweet_number, :positive_count => positive, :neutral_count => neutral, :negative_count => negative
+
  end
 
 end

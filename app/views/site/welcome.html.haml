@@ -3,9 +3,20 @@
   %h1 The State Of LANAtion
  .twocol.last
   <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
-  .row.minimum
+
+.row.minimum
  .twelvecol
   %h2 (measuring LDR twitter sentiment so you don't have to*)
+
+.row.minimum
+ .threecol
+  %h2 #{@entity.impression_count} total
+ .threecol
+  %h2 #{@entity.positive_count} +
+ .threecol
+  %h2 #{@entity.neutral_count} NEU
+ .threecol.last
+  %h2 #{@entity.negative_count} -
 
 .row.row-spacer
  .twelvecol.last
