@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dc3bffe-7ab1-4d57-a61e-2a1594b8a37f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/site/welcome.html.haml" afterPath="$PROJECT_DIR$/app/views/site/welcome.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/site_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/site_controller.rb" />
     </list>
     <ignored path="lanadelrey.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="welcome.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="welcome.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/site/welcome.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="312" selection-end="312" vertical-scroll-proportion="0.29813665">
+            <state line="32" column="21" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="site_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.0">
+            <state line="7" column="23" selection-start="218" selection-end="218" vertical-scroll-proportion="0.17749603">
               <folding />
             </state>
           </provider>
@@ -145,10 +145,10 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/fixtures/entities.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120209175836_add_positive_neutral_negative_to_entities.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/site.css.scss" />
         <option value="$PROJECT_DIR$/app/views/site/welcome.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/site_controller.rb" />
       </list>
     </option>
   </component>
@@ -202,74 +202,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lanadelrey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -723,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/site_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="6" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
@@ -753,7 +678,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/site/welcome.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="312" selection-end="312" vertical-scroll-proportion="0.29813665">
+        <state line="32" column="21" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/site_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="218" selection-end="218" vertical-scroll-proportion="0.17749603">
           <folding />
         </state>
       </provider>
