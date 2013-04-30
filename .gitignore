@@ -15,8 +15,11 @@
 /tmp
 
 # RubyMine
-.idea
+.idea/*
+.idea/*.iml
+.idea/*.xml
 
 #Mac
 .DS_store
+
 
